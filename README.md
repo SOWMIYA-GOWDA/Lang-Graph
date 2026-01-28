@@ -24,3 +24,35 @@ This project demonstrates how to combine AI generation with validation logic and
 **Frontend:** HTML, CSS, JavaScript
 
 **Environment:** Python Virtual Environment
+
+# 📂 Project Structure
+
+Langraph/
+├── app.py
+├── backend/
+│ ├── init.py
+│ ├── graph.py
+│ ├── nodes.py
+│ └── schema.py
+├── frontend/
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
+├── .env
+├── requirements.txt
+
+# ⚙️ How It Works
+
+- User submits input from the frontend
+- FastAPI handles the request
+- LangGraph initializes workflow state
+- LLM generates a response
+- Output is validated using rules
+- If invalid, the workflow retries once
+- Final result is returned to the UI
+
+# 🧪 Validation Logic
+
+- Output must not be empty
+- Minimum content length enforced
+- Maximum retry limit applied
