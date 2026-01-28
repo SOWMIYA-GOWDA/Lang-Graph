@@ -27,6 +27,8 @@ This project demonstrates how to combine AI generation with validation logic and
 
 # 📂 Project Structure
 
+```text
+
 Langraph/
 ├── app.py
 ├── backend/
